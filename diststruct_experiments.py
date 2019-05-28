@@ -64,7 +64,7 @@ def read_corpus(learn):
 #Artificial language experiment- dim 30, negative=5, window=5, min_count=5
 #English distributional phonology- dim 200, negative=5, window=5, min_count=5
 def build_model(corpus):
-    model = Word2Vec(corpus,size=30,workers=8,negative=1,window=1,min_count=1,sg=1)
+    model = Word2Vec(corpus,size=200,workers=8,negative=5,window=5,min_count=5)
     model.wv.save_word2vec_format("phone-embeddings.txt",binary=False)
 
 # Extract phonetic distances based on distinctive features
@@ -85,8 +85,8 @@ def extract_phonetic_distmatrix(featfile):
     for p in list(itertools.product(phon_vectors.index2word,phon_vectors.index2word)):
         f1= set(feature_matrix[p[0]]) 
         f2 = set(feature_matrix[p[1]])
-        #distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
-        distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
+        distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
+        #distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
     
     return distmat
 
@@ -99,8 +99,8 @@ def extract_cmu_phonetic_distmatrix():
         f1= set(phone_to_features(p[0]))
         f2 = set(phone_to_features(p[1]))
         #distmat.setdefault(p[0],{})[p[1]] = jaccard_similarity_score(list(phone_to_features(p[0])),list(phone_to_features(p[1]))) 
-        #distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
-        distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
+        distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
+        #distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
     
     return distmat
 
@@ -116,7 +116,8 @@ def visualize_embeddings():
     plt.scatter(pca_result[:, 0], pca_result[:, 1])
     words = list(model.wv.vocab)
     for i, word in enumerate(words):
-        plt.annotate(word, xy=(pca_result[i, 0], pca_result[i, 1]),size=24)
+        #plt.annotate(word, xy=(pca_result[i, 0], pca_result[i, 1]),size=24)
+        plt.annotate(word, xy=(pca_result[i, 0], pca_result[i, 1]),size=10)
     plt.savefig('pcaplot.pdf')
     plt.close()
 
@@ -129,7 +130,8 @@ def visualize_embeddings():
     plt.scatter(tsne_result[:, 0], tsne_result[:, 1])
     words = list(model.wv.vocab)
     for i, word in enumerate(words):
-        plt.annotate(word, xy=(tsne_result[i, 0], tsne_result[i, 1]),size=24)
+        #plt.annotate(word, xy=(tsne_result[i, 0], tsne_result[i, 1]),size=24)
+        plt.annotate(word, xy=(tsne_result[i, 0], tsne_result[i, 1]),size=10)
     plt.savefig('tsneplot-ppl2-eps100.pdf')
     plt.close()
 
@@ -139,8 +141,8 @@ def extract_word2vec_distmatrix():
     phon_vectors = model.wv
     distmat = {}
     for p in list(itertools.product(phon_vectors.index2word,phon_vectors.index2word)):
-        distmat.setdefault(p[0],{})[p[1]] = phon_vectors.similarity(p[0],p[1])
-        #distmat.setdefault(p[0],{})[p[1]] = euclidean(phon_vectors[p[0]],phon_vectors[p[1]])
+        #distmat.setdefault(p[0],{})[p[1]] = phon_vectors.similarity(p[0],p[1])
+        distmat.setdefault(p[0],{})[p[1]] = euclidean(phon_vectors[p[0]],phon_vectors[p[1]])
         #distmat[(p[0],p[1])] = phon_vectors.similarity(p[0],p[1])
     
     return distmat
@@ -163,7 +165,8 @@ def plot_clusters():
 def plot_distmat():
     distmat = extract_word2vec_distmatrix()
     df = pd.DataFrame.from_dict(distmat)
-    sns.set(font_scale = 2.0)
+    #sns.set(font_scale = 2.0)
+    sns.set(font_scale = 0.65)
     cg = sns.clustermap(df, xticklabels=True, yticklabels=True, cmap="Spectral_r")
     #cg.ax_row_dendrogram.set_visible(False)
     plt.savefig('phone-heatmap.pdf')
