@@ -8,6 +8,7 @@ import numpy as np
 import tensorflow as tf
 from gensim.models import Word2Vec
 from gensim.test.utils import get_tmpfile
+from gensim.models.keyedvectors import KeyedVectors
 import itertools
 from matplotlib import pyplot as plt
 import matplotlib as mpl
@@ -46,28 +47,32 @@ def extract_cmudictionary(dictfile):
 
     return prondict
 
-if 'cmu' in sys.argv[2]:
-    corpus = extract_cmudictionary(sys.argv[2]).values()
-else:
-    corpus = extract_wordlist(sys.argv[2])
+def read_corpus(learn):
+    if 'cmu' in learn:
+        corpus = extract_cmudictionary(learn).values()
+    else:
+        corpus = extract_wordlist(learn)
 
-#Contolling the size of corpus
-#corpus1 = random.sample(list(corpus),5000)
+    #Contolling the size of corpus
+    #corpus1 = random.sample(list(corpus),5000)
+    
+    return corpus
 
 #Change parameters based on experiments 
 #Preliminary experiments (Silfverberg et al. 2018)- dim 30, negative=1, window=1, min_count=5
 #Artificial language experiment- dim 30, negative=5, window=5, min_count=5
 #English distributional phonology- dim 200, negative=5, window=5, min_count=5
-model = Word2Vec(corpus,size=30,workers=8,negative=5,window=5,min_count=1,sg=1)
-phon_vectors = model.wv
-fname = get_tmpfile("vectors.kv")
-phon_vectors.save(fname)
+def build_model(corpus):
+    model = Word2Vec(corpus,size=30,workers=8,negative=1,window=1,min_count=1,sg=1)
+    model.wv.save_word2vec_format("phone-embeddings.txt",binary=False)
 
 # Extract phonetic distances based on distinctive features
-def extract_phonetic_distmatrix():
+def extract_phonetic_distmatrix(featfile):
+    model = KeyedVectors.load_word2vec_format('phone-embeddings.txt', binary=False)
+    phon_vectors = model.wv
     feature_matrix = {}
     distmat = {}
-    feat_lines = list(filter(None,open(sys.argv[3],'r').read().split('\n')))
+    feat_lines = list(filter(None,open(featfile,'r').read().split('\n')))
     feat_labels = feat_lines[0].split()
     for l in feat_lines[1:]:
         feature_matrix[l.split()[0]] = []
@@ -85,6 +90,8 @@ def extract_phonetic_distmatrix():
 
 # Extract phonetic distances for CMU based on Parrish (2017)
 def extract_cmu_phonetic_distmatrix():
+    model = KeyedVectors.load_word2vec_format('phone-embeddings.txt', binary=False)
+    phon_vectors = model.wv
     distmat = {}
     for p in list(itertools.product(phon_vectors.index2word,phon_vectors.index2word)):
         f1= set(phone_to_features(p[0]))
@@ -96,6 +103,7 @@ def extract_cmu_phonetic_distmatrix():
 
 # PCA and t-SNE plots of embeddings
 def visualize_embeddings():
+    model = KeyedVectors.load_word2vec_format('phone-embeddings.txt', binary=False)
     X = model[model.wv.vocab]
     pca = PCA(n_components=2,svd_solver='auto',random_state=1000)
     #pca = PCA(n_components=2)
@@ -124,6 +132,8 @@ def visualize_embeddings():
 
 # Extract distributional distances based on cosine similarity between embeddings
 def extract_word2vec_distmatrix():
+    model = KeyedVectors.load_word2vec_format('phone-embeddings.txt', binary=False)
+    phon_vectors = model.wv
     distmat = {}
     for p in list(itertools.product(phon_vectors.index2word,phon_vectors.index2word)):
         #distmat.setdefault(p[0],{})[p[1]] = phon_vectors.similarity(p[0],p[1])
@@ -158,6 +168,8 @@ def plot_distmat():
 
 # analogies, odd one out tasks, inter-phone similarities to file
 def evaluate_embeddings1():
+    model = KeyedVectors.load_word2vec_format('phone-embeddings.txt', binary=False)
+    phon_vectors = model.wv
     with open('eval1-embeddings','w') as f1:
         for c in list(itertools.permutations(phon_vectors.index2word, 3)):
             result = phon_vectors.most_similar(positive=[c[0], c[1]], negative=[c[2]])
@@ -172,6 +184,8 @@ def evaluate_embeddings1():
 
 # analogies among English vowels based on CMU arpabet transcription
 def evaluate_embeddings2():
+    model = KeyedVectors.load_word2vec_format('phone-embeddings.txt', binary=False)
+    phon_vectors = model.wv
     with open('eval2-embeddings','w') as f1:
         for c1 in phon_vectors.index2word:
             if c1[0] in ['A','E','I','O','U']:
@@ -181,14 +195,12 @@ def evaluate_embeddings2():
                             if c3[0] in ['A','E','I','O','U']:
                                 f1.write("%s + %s - %s = %s\n"%(c1, c2, c3, str(phon_vectors.most_similar(positive=[c1, c2], negative=[c3], topn=1)[0][0])))
     
-          
-
 # correlation between distinctive feature space and embedding space
-def get_correlation():
-    if 'cmu' in sys.argv[2]:
+def get_correlation(learn,feat):
+    if 'cmu' in learn:
         phonetic_distmat = extract_cmu_phonetic_distmatrix()
     else:
-        phonetic_distmat = extract_phonetic_distmatrix()
+        phonetic_distmat = extract_phonetic_distmatrix(feat)
     word2vec_dist = extract_word2vec_distmatrix()
     word2vec_distmat = {}
     for k1 in word2vec_dist.keys():
@@ -219,15 +231,19 @@ def get_correlation():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--correlation",help="Correlation between phonetic similarity and word2vec similarity")
-    parser.add_argument("--plotembeddings",help="PCA and t-SNE plots of embeddings")
-    parser.add_argument("--dendrogram",help="Dendrogram plot of embeddings")
-    parser.add_argument("--heatmap",help="Heat map of embeddings")
-    parser.add_argument("--evalembeddings1",help="Evaluation of embeddings")
-    parser.add_argument("--evalembeddings2",help="Evaluation of embeddings")
+    parser.add_argument("--correlation",help="Correlation between phonetic similarity and word2vec similarity",action='store_true')
+    parser.add_argument("--plotembeddings",help="PCA and t-SNE plots of embeddings",action='store_true')
+    parser.add_argument("--dendrogram",help="Dendrogram plot of embeddings",action='store_true')
+    parser.add_argument("--heatmap",help="Heat map of embeddings",action='store_true')
+    parser.add_argument("--evalembeddings1",help="Evaluation of embeddings",action='store_true')
+    parser.add_argument("--evalembeddings2",help="Evaluation of embeddings",action='store_true')
+    parser.add_argument("--learningdata",help="Phonetic transcribed corpus file")
+    parser.add_argument("--featuredata",help="Phonetic feature specification")
     args = parser.parse_args()
+    corpus = read_corpus(args.learningdata)
+    build_model(corpus)
     if args.correlation:
-        get_correlation()
+        get_correlation(args.learningdata,args.featuredata)
     if args.plotembeddings:
         visualize_embeddings()
     if args.heatmap:

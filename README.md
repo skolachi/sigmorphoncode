@@ -3,6 +3,7 @@ Data and code for Sigmorphon submission
 artificial_language.py - Code used to generate artificial languages
 diststruct_experiments.py - Main code for experiments
 featurephone.py - Distinctive feature definition for CMU arpabet from Parrish (2017)
+phone-embeddings.txt - Phone embeddings written to file
 
 # Data files for artificial languages
 artificiallanguages:
