@@ -85,8 +85,8 @@ def extract_phonetic_distmatrix(featfile):
     for p in list(itertools.product(phon_vectors.index2word,phon_vectors.index2word)):
         f1= set(feature_matrix[p[0]]) 
         f2 = set(feature_matrix[p[1]])
-        #distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
-        distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
+        distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
+        #distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
     
     return distmat
 
@@ -99,8 +99,8 @@ def extract_cmu_phonetic_distmatrix():
         f1= set(phone_to_features(p[0]))
         f2 = set(phone_to_features(p[1]))
         #distmat.setdefault(p[0],{})[p[1]] = jaccard_similarity_score(list(phone_to_features(p[0])),list(phone_to_features(p[1]))) 
-        #distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
-        distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
+        distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
+        #distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
     
     return distmat
 
@@ -141,8 +141,8 @@ def extract_word2vec_distmatrix():
     phon_vectors = model.wv
     distmat = {}
     for p in list(itertools.product(phon_vectors.index2word,phon_vectors.index2word)):
-        distmat.setdefault(p[0],{})[p[1]] = phon_vectors.similarity(p[0],p[1])
-        #distmat.setdefault(p[0],{})[p[1]] = euclidean(phon_vectors[p[0]],phon_vectors[p[1]])
+        #distmat.setdefault(p[0],{})[p[1]] = phon_vectors.similarity(p[0],p[1])
+        distmat.setdefault(p[0],{})[p[1]] = euclidean(phon_vectors[p[0]],phon_vectors[p[1]])
         #distmat[(p[0],p[1])] = phon_vectors.similarity(p[0],p[1])
     
     return distmat
