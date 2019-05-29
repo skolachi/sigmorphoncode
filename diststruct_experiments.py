@@ -116,22 +116,22 @@ def visualize_embeddings():
     plt.scatter(pca_result[:, 0], pca_result[:, 1])
     words = list(model.wv.vocab)
     for i, word in enumerate(words):
-        #plt.annotate(word, xy=(pca_result[i, 0], pca_result[i, 1]),size=24)
-        plt.annotate(word, xy=(pca_result[i, 0], pca_result[i, 1]),size=10)
+        plt.annotate(word, xy=(pca_result[i, 0], pca_result[i, 1]),size=24)
+        #plt.annotate(word, xy=(pca_result[i, 0], pca_result[i, 1]),size=10)
     plt.savefig('pcaplot.pdf')
     plt.close()
 
     #for ppl in range(1,11,1):
     #    for e in range(20,220,20):
-    tsne = TSNE(n_components=2,perplexity=5,n_iter=5000, n_iter_without_progress=300, learning_rate=100,early_exaggeration=15.0)
+    tsne = TSNE(n_components=2,perplexity=2.5,n_iter=5000, n_iter_without_progress=300, learning_rate=100,early_exaggeration=15.0)
     tsne_result = tsne.fit_transform(X)
 
     # create a scatter plot of the projection
     plt.scatter(tsne_result[:, 0], tsne_result[:, 1])
     words = list(model.wv.vocab)
     for i, word in enumerate(words):
-        #plt.annotate(word, xy=(tsne_result[i, 0], tsne_result[i, 1]),size=24)
-        plt.annotate(word, xy=(tsne_result[i, 0], tsne_result[i, 1]),size=10)
+        plt.annotate(word, xy=(tsne_result[i, 0], tsne_result[i, 1]),size=24)
+        #plt.annotate(word, xy=(tsne_result[i, 0], tsne_result[i, 1]),size=10)
     plt.savefig('tsneplot-ppl2-eps100.pdf')
     plt.close()
 
@@ -165,8 +165,8 @@ def plot_clusters():
 def plot_distmat():
     distmat = extract_word2vec_distmatrix()
     df = pd.DataFrame.from_dict(distmat)
-    #sns.set(font_scale = 2.0)
-    sns.set(font_scale = 0.65)
+    sns.set(font_scale = 2.0)
+    #sns.set(font_scale = 0.65)
     cg = sns.clustermap(df, xticklabels=True, yticklabels=True, cmap="Spectral_r")
     #cg.ax_row_dendrogram.set_visible(False)
     plt.savefig('phone-heatmap.pdf')
