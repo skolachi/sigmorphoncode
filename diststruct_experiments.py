@@ -64,7 +64,7 @@ def read_corpus(learn):
 #Artificial language experiment- dim 30, negative=5, window=5, min_count=5
 #English distributional phonology- dim 200, negative=5, window=5, min_count=5
 def build_model(corpus):
-    model = Word2Vec(corpus,size=200,workers=8,negative=5,window=5,min_count=5)
+    model = Word2Vec(corpus,size=30,workers=8,negative=5,window=3,alpha=0.05,min_count=5)
     model.wv.save_word2vec_format("phone-embeddings.txt",binary=False)
 
 # Extract phonetic distances based on distinctive features
@@ -85,8 +85,8 @@ def extract_phonetic_distmatrix(featfile):
     for p in list(itertools.product(phon_vectors.index2word,phon_vectors.index2word)):
         f1= set(feature_matrix[p[0]]) 
         f2 = set(feature_matrix[p[1]])
-        distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
-        #distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
+        #distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
+        distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
     
     return distmat
 
@@ -99,8 +99,8 @@ def extract_cmu_phonetic_distmatrix():
         f1= set(phone_to_features(p[0]))
         f2 = set(phone_to_features(p[1]))
         #distmat.setdefault(p[0],{})[p[1]] = jaccard_similarity_score(list(phone_to_features(p[0])),list(phone_to_features(p[1]))) 
-        distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
-        #distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
+        #distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
+        distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
     
     return distmat
 
@@ -123,7 +123,7 @@ def visualize_embeddings():
 
     #for ppl in range(1,11,1):
     #    for e in range(20,220,20):
-    tsne = TSNE(n_components=2,perplexity=4,n_iter=5000, n_iter_without_progress=300, learning_rate=100,early_exaggeration=15.0)
+    tsne = TSNE(n_components=2,perplexity=5,n_iter=5000, n_iter_without_progress=300, learning_rate=100,early_exaggeration=15.0)
     tsne_result = tsne.fit_transform(X)
 
     # create a scatter plot of the projection
@@ -141,8 +141,8 @@ def extract_word2vec_distmatrix():
     phon_vectors = model.wv
     distmat = {}
     for p in list(itertools.product(phon_vectors.index2word,phon_vectors.index2word)):
-        #distmat.setdefault(p[0],{})[p[1]] = phon_vectors.similarity(p[0],p[1])
-        distmat.setdefault(p[0],{})[p[1]] = euclidean(phon_vectors[p[0]],phon_vectors[p[1]])
+        distmat.setdefault(p[0],{})[p[1]] = phon_vectors.similarity(p[0],p[1])
+        #distmat.setdefault(p[0],{})[p[1]] = euclidean(phon_vectors[p[0]],phon_vectors[p[1]])
         #distmat[(p[0],p[1])] = phon_vectors.similarity(p[0],p[1])
     
     return distmat

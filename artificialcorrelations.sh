@@ -1,13 +1,13 @@
 rm artificiallang_correlations
-python3 diststruct_experiments.py artificiallanguages/language1 artificiallangfeatures.txt >>artificiallang_correlations
-python3 diststruct_experiments.py artificiallanguages/language2 artificiallangfeatures.txt >>artificiallang_correlations
-python3 diststruct_experiments.py artificiallanguages/language3 artificiallangfeatures.txt >>artificiallang_correlations
-python3 diststruct_experiments.py artificiallanguages/language4 artificiallangfeatures.txt >>artificiallang_correlations
-python3 diststruct_experiments.py artificiallanguages/language5 artificiallangfeatures.txt >>artificiallang_correlations
-python3 diststruct_experiments.py artificiallanguages/language6 artificiallangfeatures.txt >>artificiallang_correlations
-python3 diststruct_experiments.py artificiallanguages/language7 artificiallangfeatures.txt >>artificiallang_correlations
-python3 diststruct_experiments.py artificiallanguages/language8 artificiallangfeatures.txt >>artificiallang_correlations
-python3 diststruct_experiments.py artificiallanguages/language9 artificiallangfeatures.txt >>artificiallang_correlations
-python3 diststruct_experiments.py artificiallanguages/language10 artificiallangfeatures.txt >>artificiallang_correlations
-python3 diststruct_experiments.py artificiallanguages/language11 artificiallangfeatures.txt >>artificiallang_correlations
-python3 diststruct_experiments.py artificiallanguages/language12 artificiallangfeatures.txt >>artificiallang_correlations
+python3 diststruct_experiments.py --correlation --learningdata artificiallanguages/language1 --featuredata artificiallangfeatures.txt >>artificiallang_correlations
+python3 diststruct_experiments.py --correlation --learningdata artificiallanguages/language2 --featuredata artificiallangfeatures.txt >>artificiallang_correlations
+python3 diststruct_experiments.py --correlation --learningdata artificiallanguages/language3 --featuredata artificiallangfeatures.txt >>artificiallang_correlations
+python3 diststruct_experiments.py --correlation --learningdata artificiallanguages/language4 --featuredata artificiallangfeatures.txt >>artificiallang_correlations
+python3 diststruct_experiments.py --correlation --learningdata artificiallanguages/language5 --featuredata artificiallangfeatures.txt >>artificiallang_correlations
+python3 diststruct_experiments.py --correlation --learningdata artificiallanguages/language6 --featuredata artificiallangfeatures.txt >>artificiallang_correlations
+python3 diststruct_experiments.py --correlation --learningdata artificiallanguages/language7 --featuredata artificiallangfeatures.txt >>artificiallang_correlations
+python3 diststruct_experiments.py --correlation --learningdata artificiallanguages/language8 --featuredata artificiallangfeatures.txt >>artificiallang_correlations
+python3 diststruct_experiments.py --correlation --learningdata artificiallanguages/language9 --featuredata artificiallangfeatures.txt >>artificiallang_correlations
+python3 diststruct_experiments.py --correlation --learningdata artificiallanguages/language10 --featuredata artificiallangfeatures.txt >>artificiallang_correlations
+python3 diststruct_experiments.py --correlation --learningdata artificiallanguages/language11 --featuredata artificiallangfeatures.txt >>artificiallang_correlations
+python3 diststruct_experiments.py --correlation --learningdata artificiallanguages/language12 --featuredata artificiallangfeatures.txt >>artificiallang_correlations
