@@ -60,11 +60,10 @@ def read_corpus(learn):
     return corpus
 
 #Change parameters based on experiments 
-#Preliminary experiments (Silfverberg et al. 2018)- dim 30, negative=1, window=1, min_count=5
-#Artificial language experiment- dim 30, negative=5, window=5, min_count=5
-#English distributional phonology- dim 200, negative=5, window=5, min_count=5
+#Silfverberg et al. 2018- skipgram, dim 30, negative=1, window=1, min_count=5
+#This paper- dim 30, negative=3, window=4, min_count=5, alpha=0.05
 def build_model(corpus):
-    model = Word2Vec(corpus,size=30,workers=8,negative=5,window=3,alpha=0.05,min_count=5)
+    model = Word2Vec(corpus,size=30,workers=8,negative=3,window=4,alpha=0.05,min_count=5)
     model.wv.save_word2vec_format("phone-embeddings.txt",binary=False)
 
 # Extract phonetic distances based on distinctive features
@@ -85,8 +84,9 @@ def extract_phonetic_distmatrix(featfile):
     for p in list(itertools.product(phon_vectors.index2word,phon_vectors.index2word)):
         f1= set(feature_matrix[p[0]]) 
         f2 = set(feature_matrix[p[1]])
-        distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
-        #distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
+        if f1 != set([]) and f2 != set([]):
+            distmat[(p[0],p[1])] = 1.0 - (float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2)))
+            #distmat[(p[0],p[1])] = float(len(f1 & f2)) / (len(f1) + len(f2) - len(f1 & f2))
     
     return distmat
 
@@ -147,7 +147,6 @@ def extract_word2vec_distmatrix():
     
     return distmat
 
-
 # Plot dendrogram clusters of phones
 def plot_clusters():
     distmat = extract_word2vec_distmatrix()
@@ -165,9 +164,9 @@ def plot_clusters():
 def plot_distmat():
     distmat = extract_word2vec_distmatrix()
     df = pd.DataFrame.from_dict(distmat)
-    sns.set(font_scale = 2.0)
+    sns.set(font_scale = 1.25)
     #sns.set(font_scale = 0.65)
-    cg = sns.clustermap(df, xticklabels=True, yticklabels=True, cmap="Spectral_r")
+    cg = sns.clustermap(df, method='weighted', metric='euclidean', xticklabels=True, yticklabels=True, cmap="Spectral_r")
     #cg.ax_row_dendrogram.set_visible(False)
     plt.savefig('phone-heatmap.pdf')
     plt.close()
@@ -213,11 +212,40 @@ def get_correlation(learn,feat):
         for k2 in word2vec_dist[k1]:
             word2vec_distmat[(k1,k2)] = word2vec_dist[k1][k2]
     print(sorted(phonetic_distmat)==sorted(word2vec_distmat))
-    phonetic_distances = [phonetic_distmat[k] for k in sorted(phonetic_distmat)]
-    distributional_distances = [word2vec_distmat[k] for k in sorted(phonetic_distmat)]
-    print("Pearson correlation coefficient:",pearsonr(phonetic_distances, distributional_distances))
-    print("Spearman correlation coefficient:",spearmanr(phonetic_distances, distributional_distances))
-    stat, p = shapiro(phonetic_distances)
+    #phonetic_distances = [phonetic_distmat[k] for k in sorted(phonetic_distmat) if k[0] != k[1]]
+    #distributional_distances = [word2vec_distmat[k] for k in sorted(phonetic_distmat) if k[0] != k[1]]
+    #print(len(phonetic_distances)==len(distributional_distances))
+    phoneme_coord = {}
+    for k in [k for k in sorted(phonetic_distmat) if k[0] != k[1]]:
+        if (k[1],k[0]) not in phoneme_coord.keys() and '#' not in k:
+            phoneme_coord[k] = (phonetic_distmat[k],word2vec_distmat[k])
+    phon_dist = [k[0] for k in phoneme_coord.values()]
+    w2v_dist = [k[1] for k in phoneme_coord.values()]
+    print(len(phon_dist)==len(w2v_dist))
+    #cg = sns.scatterplot(phonetic_distances,distributional_distances,x_jitter=.001,y_jitter=0.001)
+    plt.figure(figsize=(8, 8))
+    plt.scatter(phon_dist,w2v_dist)
+    for i,p in enumerate(phoneme_coord.keys()):
+        plt.annotate(p[0]+'-'+p[1], xy=(phon_dist[i],w2v_dist[i]),size=8,horizontalalignment=random.choice(['left','right']))
+    plt.savefig('phoneme-likelihood.pdf')
+    plt.close()
+    phoneme_index = [float(w)/(float(p)+1e-6) for w,p in zip(w2v_dist,phon_dist)]
+    phon_ind = {}
+    for i,k in enumerate(phoneme_coord.keys()):
+        phon_ind[k] = phoneme_index[i]
+    sorted_phon_ind = sorted(phon_ind.items(), key=lambda kv: kv[1])
+    phon_ind = [k[1] for k in sorted_phon_ind]
+    phon_list = [k[0][0]+'-'+k[0][1] for k in sorted_phon_ind]
+    plt.figure(figsize=(8, 4))
+    plt.bar([i for i in range(len(phoneme_index))],phon_ind,align='edge',width=0.5)
+    plt.xticks([i + 0.05 for i in range(len(phoneme_index))],phon_list,size=4,rotation=90)
+    plt.savefig('phonemeindex.pdf')
+    plt.close()
+    print("Pearson correlation coefficient:",pearsonr(phon_dist, w2v_dist))
+    print("Spearman correlation coefficient:",spearmanr(phon_dist, w2v_dist))
+    #print("Pearson correlation coefficient:",pearsonr(phonetic_distances, distributional_distances))
+    #print("Spearman correlation coefficient:",spearmanr(phonetic_distances, distributional_distances))
+    stat, p = shapiro(phon_dist)
     print('Statistics=%.3f, p=%.3f' % (stat, p))
     # interpret
     alpha = 0.05
@@ -225,7 +253,7 @@ def get_correlation(learn,feat):
         print('Phonetic Distances looks Gaussian (fail to reject H0)')
     else:
         print('Phonetic Distances does not look Gaussian (reject H0)')
-    stat, p = shapiro(distributional_distances)
+    stat, p = shapiro(w2v_dist)
     print('Statistics=%.3f, p=%.3f' % (stat, p))
     # interpret
     alpha = 0.05
@@ -233,7 +261,6 @@ def get_correlation(learn,feat):
         print('Distributional Distances looks Gaussian (fail to reject H0)')
     else:
         print('Distributional Distances does not look Gaussian (reject H0)')
-
 
 def main():
     parser = argparse.ArgumentParser()
