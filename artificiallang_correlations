@@ -1,336 +1,336 @@
-t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
-a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
-u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
-T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
-r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
 k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-# ['+word_boundary']
+K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
+i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
+m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
 b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
 p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
-o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
-K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
+a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
+# ['+word_boundary']
+n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
+t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
 True
 True
-Pearson correlation coefficient: (0.8209301430640039, 8.746836560304832e-08)
-Spearman correlation coefficient: SpearmanrResult(correlation=0.716820075012918, pvalue=1.7759462922638174e-05)
+Pearson correlation coefficient: (0.872885971488338, 1.385977302868839e-09)
+Spearman correlation coefficient: SpearmanrResult(correlation=0.7294925282990803, pvalue=1.061128970234455e-05)
 Statistics=0.873, p=0.003
 Phonetic Distances does not look Gaussian (reject H0)
-Statistics=0.869, p=0.002
+Statistics=0.828, p=0.000
 Distributional Distances does not look Gaussian (reject H0)
-o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
-e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
-a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
-p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
 b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
+# ['+word_boundary']
+s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
 g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
 u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
-s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
-m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-# ['+word_boundary']
-n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
 d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
 i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
+e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
+n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
+N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
+r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
 True
 True
-Pearson correlation coefficient: (0.7975981979519541, 3.1303750945171673e-13)
-Spearman correlation coefficient: SpearmanrResult(correlation=0.7539095656501661, pvalue=3.053697477781857e-11)
+Pearson correlation coefficient: (0.631761567205615, 2.3111744885029037e-07)
+Spearman correlation coefficient: SpearmanrResult(correlation=0.5127510354930126, pvalue=6.26856883556322e-05)
 Statistics=0.911, p=0.001
 Phonetic Distances does not look Gaussian (reject H0)
-Statistics=0.888, p=0.000
+Statistics=0.854, p=0.000
 Distributional Distances does not look Gaussian (reject H0)
-m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
 # ['+word_boundary']
-u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
-g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
 d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
-k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
-t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
 o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
-T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
+n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
 r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
 a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
-N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
+s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
 True
 True
-Pearson correlation coefficient: (0.5481499766043987, 1.864499163809267e-08)
-Spearman correlation coefficient: SpearmanrResult(correlation=0.46862551169321187, pvalue=2.8021360596004323e-06)
+Pearson correlation coefficient: (0.5729750332869784, 2.936987869341373e-09)
+Spearman correlation coefficient: SpearmanrResult(correlation=0.5226440440014479, pvalue=1.0715991105541212e-07)
 Statistics=0.927, p=0.000
 Phonetic Distances does not look Gaussian (reject H0)
-Statistics=0.780, p=0.000
+Statistics=0.792, p=0.000
 Distributional Distances does not look Gaussian (reject H0)
-a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
-o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
-K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
 u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
 T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
 b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-# ['+word_boundary']
-i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
+t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
 e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
-r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
 s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
 P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
-p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
 d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
+a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
+p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+# ['+word_boundary']
+i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
+k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
 True
 True
-Pearson correlation coefficient: (0.5027654370096021, 4.4519302069362196e-10)
-Spearman correlation coefficient: SpearmanrResult(correlation=0.514090146559497, pvalue=1.5397690880498484e-10)
+Pearson correlation coefficient: (0.47703231023815207, 4.322467185217192e-09)
+Spearman correlation coefficient: SpearmanrResult(correlation=0.5025488749149736, pvalue=4.541531114588562e-10)
 Statistics=0.939, p=0.000
 Phonetic Distances does not look Gaussian (reject H0)
-Statistics=0.857, p=0.000
+Statistics=0.849, p=0.000
 Distributional Distances does not look Gaussian (reject H0)
-a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
-e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
-T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
-K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
 d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
 m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
+P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
+# ['+word_boundary']
 t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
+s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
+p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
+r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
 i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
+T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+True
+True
+Pearson correlation coefficient: (0.47015047729631254, 7.69463771139049e-09)
+Spearman correlation coefficient: SpearmanrResult(correlation=0.4618823594429555, pvalue=1.5131279103947626e-08)
+Statistics=0.939, p=0.000
+Phonetic Distances does not look Gaussian (reject H0)
+Statistics=0.834, p=0.000
+Distributional Distances does not look Gaussian (reject H0)
+T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
+o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
 b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
 N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
+k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
 s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
+m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
+t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
+g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
 # ['+word_boundary']
 p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+True
+True
+Pearson correlation coefficient: (0.5034761292815494, 4.1697124616756794e-10)
+Spearman correlation coefficient: SpearmanrResult(correlation=0.4120109877399765, pvalue=6.239158786763287e-07)
+Statistics=0.939, p=0.000
+Phonetic Distances does not look Gaussian (reject H0)
+Statistics=0.842, p=0.000
+Distributional Distances does not look Gaussian (reject H0)
+d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
+g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
+P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
+p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
+i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
+n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+# ['+word_boundary']
+u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
+b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+True
+True
+Pearson correlation coefficient: (0.5005482217036017, 4.439217061334927e-11)
+Spearman correlation coefficient: SpearmanrResult(correlation=0.3687674972639393, pvalue=2.727009749908766e-06)
+Statistics=0.934, p=0.000
+Phonetic Distances does not look Gaussian (reject H0)
+Statistics=0.880, p=0.000
+Distributional Distances does not look Gaussian (reject H0)
+i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
+# ['+word_boundary']
+p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
+b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
 o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
 r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
+g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
+k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
 True
 True
-Pearson correlation coefficient: (0.46038634256593286, 1.7068205929987235e-08)
-Spearman correlation coefficient: SpearmanrResult(correlation=0.4467374235752662, pvalue=4.989345604093555e-08)
+Pearson correlation coefficient: (0.3945768785653134, 9.284623382690343e-08)
+Spearman correlation coefficient: SpearmanrResult(correlation=0.28369242347173446, pvalue=0.00016984585109067226)
+Statistics=0.939, p=0.000
+Phonetic Distances does not look Gaussian (reject H0)
+Statistics=0.920, p=0.000
+Distributional Distances does not look Gaussian (reject H0)
+N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
+# ['+word_boundary']
+K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
+p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
+n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
+m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
+r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
+True
+True
+Pearson correlation coefficient: (0.42151416876338316, 9.390666340776517e-09)
+Spearman correlation coefficient: SpearmanrResult(correlation=0.27917315073314103, pvalue=0.00021757930821948392)
+Statistics=0.939, p=0.000
+Phonetic Distances does not look Gaussian (reject H0)
+Statistics=0.876, p=0.000
+Distributional Distances does not look Gaussian (reject H0)
+g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
+P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
+u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
+T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+# ['+word_boundary']
+i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
+n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
+s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
+True
+True
+Pearson correlation coefficient: (0.4809392584030619, 2.7766959729132426e-11)
+Spearman correlation coefficient: SpearmanrResult(correlation=0.362072509456889, pvalue=1.138125726995436e-06)
 Statistics=0.939, p=0.000
 Phonetic Distances does not look Gaussian (reject H0)
 Statistics=0.859, p=0.000
 Distributional Distances does not look Gaussian (reject H0)
-a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
-u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
-K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
-e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
 i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
-r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-# ['+word_boundary']
-m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
 p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
-True
-True
-Pearson correlation coefficient: (0.5222131383566759, 7.0167698851708e-11)
-Spearman correlation coefficient: SpearmanrResult(correlation=0.47807259658862283, pvalue=3.957200500622788e-09)
-Statistics=0.939, p=0.000
-Phonetic Distances does not look Gaussian (reject H0)
-Statistics=0.885, p=0.000
-Distributional Distances does not look Gaussian (reject H0)
-T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
 o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
-# ['+word_boundary']
-p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
-t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
-r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
 s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
-True
-True
-Pearson correlation coefficient: (0.5233213605663988, 3.913230167291843e-12)
-Spearman correlation coefficient: SpearmanrResult(correlation=0.39425713309445554, pvalue=4.5956421418774454e-07)
-Statistics=0.934, p=0.000
-Phonetic Distances does not look Gaussian (reject H0)
-Statistics=0.877, p=0.000
-Distributional Distances does not look Gaussian (reject H0)
+u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
+a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
 P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
-n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
-u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
-i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
-a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
-p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
 K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-# ['+word_boundary']
-m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
-b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
 N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-True
-True
-Pearson correlation coefficient: (0.3884496522546289, 1.5207413748968553e-07)
-Spearman correlation coefficient: SpearmanrResult(correlation=0.3117877959698981, pvalue=3.3072628436546126e-05)
-Statistics=0.939, p=0.000
-Phonetic Distances does not look Gaussian (reject H0)
-Statistics=0.944, p=0.000
-Distributional Distances does not look Gaussian (reject H0)
-s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
-r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
 m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
 e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
-# ['+word_boundary']
-K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
-k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
 d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
-a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
-True
-True
-Pearson correlation coefficient: (0.4029256090669629, 4.663512028079657e-08)
-Spearman correlation coefficient: SpearmanrResult(correlation=0.2804218339552816, pvalue=0.00020327337827769163)
-Statistics=0.939, p=0.000
-Phonetic Distances does not look Gaussian (reject H0)
-Statistics=0.918, p=0.000
-Distributional Distances does not look Gaussian (reject H0)
-u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
-K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
-k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
-a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
-o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
 # ['+word_boundary']
-N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
-t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-True
-True
-Pearson correlation coefficient: (0.4065184454171975, 3.447212790405518e-08)
-Spearman correlation coefficient: SpearmanrResult(correlation=0.2851776361119152, pvalue=0.00015642472368111127)
-Statistics=0.939, p=0.000
-Phonetic Distances does not look Gaussian (reject H0)
-Statistics=0.855, p=0.000
-Distributional Distances does not look Gaussian (reject H0)
 k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
 n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-# ['+word_boundary']
-p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
-b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
-K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
 r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
+g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
 t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
-a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
+T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
 True
 True
-Pearson correlation coefficient: (0.37963864358206173, 1.2996859391169256e-06)
-Spearman correlation coefficient: SpearmanrResult(correlation=0.38819661343221595, pvalue=7.114965884460652e-07)
+Pearson correlation coefficient: (0.47616372619221475, 4.939688021954751e-10)
+Spearman correlation coefficient: SpearmanrResult(correlation=0.5154538018691618, pvalue=9.242735225450157e-12)
 Statistics=0.944, p=0.000
 Phonetic Distances does not look Gaussian (reject H0)
-Statistics=0.937, p=0.000
+Statistics=0.951, p=0.000
 Distributional Distances does not look Gaussian (reject H0)
-T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
 # ['+word_boundary']
-r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
-k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
-b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
-N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
-n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
-t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
-a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
-o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
-i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
 e ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '-back', '-round', '-diphthong', '-long']
+T ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+u ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '+back', '+round', '-diphthong', '-long']
 p ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
+k ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+r ['-syllabic', '+consonantal', '+approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+K ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+N ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+m ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
 g ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '-coronal', '+dorsal', '+high', '-low', '+back']
+n ['-syllabic', '+consonantal', '-approximant', '+sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+a ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '+low', '+back', '-round', '-diphthong', '-long']
 d ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+i ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '+high', '-low', '-back', '-round', '-diphthong', '-long']
+P ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '+spread', '+labial', '-coronal', '-dorsal', '-round']
+o ['+syllabic', '-consonantal', '-approximant', '+sonorant', '+continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '+dorsal', '-high', '-low', '+back', '+round', '-diphthong', '-long']
 s ['-syllabic', '+consonantal', '-approximant', '-sonorant', '+continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '-distributed', '-dorsal']
+t ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '-voice', '-spread', '-labial', '+coronal', '+anterior', '+distributed', '-dorsal']
+b ['-syllabic', '+consonantal', '-approximant', '-sonorant', '-continuant', '-del_rel', '+voice', '-spread', '+labial', '-coronal', '-dorsal', '-round']
 True
 True
-Pearson correlation coefficient: (0.3853373440625711, 1.94647488512942e-07)
-Spearman correlation coefficient: SpearmanrResult(correlation=0.36342925180402263, pvalue=1.0306057128174996e-06)
+Pearson correlation coefficient: (0.430255785776589, 4.270656728157732e-09)
+Spearman correlation coefficient: SpearmanrResult(correlation=0.40680058260535434, pvalue=3.365859802192419e-08)
 Statistics=0.939, p=0.000
 Phonetic Distances does not look Gaussian (reject H0)
-Statistics=0.961, p=0.000
+Statistics=0.975, p=0.003
 Distributional Distances does not look Gaussian (reject H0)

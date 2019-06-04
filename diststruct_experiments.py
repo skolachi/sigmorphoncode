@@ -123,7 +123,7 @@ def visualize_embeddings():
 
     #for ppl in range(1,11,1):
     #    for e in range(20,220,20):
-    tsne = TSNE(n_components=2,perplexity=2.5,n_iter=5000, n_iter_without_progress=300, learning_rate=100,early_exaggeration=15.0)
+    tsne = TSNE(n_components=2,perplexity=3,n_iter=5000, n_iter_without_progress=300, learning_rate=100,early_exaggeration=15.0)
     tsne_result = tsne.fit_transform(X)
 
     # create a scatter plot of the projection
@@ -164,7 +164,7 @@ def plot_clusters():
 def plot_distmat():
     distmat = extract_word2vec_distmatrix()
     df = pd.DataFrame.from_dict(distmat)
-    sns.set(font_scale = 1.25)
+    sns.set(font_scale = 2.0)
     #sns.set(font_scale = 0.65)
     cg = sns.clustermap(df, method='weighted', metric='euclidean', xticklabels=True, yticklabels=True, cmap="Spectral_r")
     #cg.ax_row_dendrogram.set_visible(False)
@@ -222,11 +222,15 @@ def get_correlation(learn,feat):
     phon_dist = [k[0] for k in phoneme_coord.values()]
     w2v_dist = [k[1] for k in phoneme_coord.values()]
     print(len(phon_dist)==len(w2v_dist))
+    #for w,p,k in zip(w2v_dist,phon_dist,phoneme_coord.keys()):
+    #    print(w,p,k)
     #cg = sns.scatterplot(phonetic_distances,distributional_distances,x_jitter=.001,y_jitter=0.001)
-    plt.figure(figsize=(8, 8))
+    plt.figure(figsize=(10, 10))
     plt.scatter(phon_dist,w2v_dist)
     for i,p in enumerate(phoneme_coord.keys()):
-        plt.annotate(p[0]+'-'+p[1], xy=(phon_dist[i],w2v_dist[i]),size=8,horizontalalignment=random.choice(['left','right']))
+        plt.annotate(p[0]+'-'+p[1], xy=(phon_dist[i],w2v_dist[i]),size=16,horizontalalignment=random.choice(['left','right']))
+    plt.ylabel('Contextual distance',fontsize=20)
+    plt.xlabel('Phonetic distance',fontsize=20)
     plt.savefig('phoneme-likelihood.pdf')
     plt.close()
     phoneme_index = [float(w)/(float(p)+1e-6) for w,p in zip(w2v_dist,phon_dist)]
@@ -239,6 +243,8 @@ def get_correlation(learn,feat):
     plt.figure(figsize=(8, 4))
     plt.bar([i for i in range(len(phoneme_index))],phon_ind,align='edge',width=0.5)
     plt.xticks([i + 0.05 for i in range(len(phoneme_index))],phon_list,size=4,rotation=90)
+    plt.ylabel('Contextual distance / Phonetic distance')
+    plt.xlabel('Phone pairs')
     plt.savefig('phonemeindex.pdf')
     plt.close()
     print("Pearson correlation coefficient:",pearsonr(phon_dist, w2v_dist))
