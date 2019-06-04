@@ -44,7 +44,7 @@ lang9-eval1-embeddings
 # Data file for Telugu and Vedic
 indian/
 brahmifeatures.txt  # distinctive feature file for both Telugu and Vedic Sanskrit since both scripts are Brahmi
-rigvedic_sampwordlist.txt
+rvfull-learning.txt
 telugu-brown.dict
 
 # Data files for Shona from Hayes and Wilson (2008)
